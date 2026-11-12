@@ -51,4 +51,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(predictions = model.predict(X_test)
+print(classification_report(y_test, predictions)))
+
+from sklearn.metrics import classification_report    
